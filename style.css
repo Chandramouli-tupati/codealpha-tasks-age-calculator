@@ -1,0 +1,144 @@
+body {
+    background-image: linear-gradient(to right bottom, #48197a, #1399b1);
+    background-repeat: no-repeat;
+    font-family: 'myfont';
+    overflow-y: hidden;
+
+}
+
+@font-face {
+    font-family: 'myfont';
+    src: url("myfont.otf");
+}
+
+.heading {
+    font-size: 45px;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(to right bottom, rgb(236, 23, 23) 20%, rgb(217, 245, 5) 40%, rgb(59, 242, 215)60%, rgb(234, 64, 200)80%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: 'myfont';
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+}
+
+.leftsec {
+    text-align: center;
+    width: 50%;
+}
+
+.label {
+    font-size: 30px;
+    color: white;
+
+}
+
+#age,
+#level {
+    font-size: 30px;
+    font-weight: bold;
+    color: lightblue;
+    background: linear-gradient(to right bottom, rgb(240, 157, 121) 20%, rgb(217, 245, 5) 40%, rgb(249, 250, 251)60%, rgb(234, 64, 200)80%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+#level {
+    margin-top: 20px;
+}
+
+#dob {
+    font-size: 25px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+#button {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+#warning {
+    color: rgb(229, 255, 0);
+    font-size: 15px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.rightsec img {
+    width: 400px;
+    height: 400px;
+    animation: anime 4s linear;
+}
+
+@keyframes anime {
+    0% {
+        filter: opacity(0%);
+    }
+
+    50% {
+        filter: opacity(50%);
+    }
+
+    100% {
+        filter: opacity(100%);
+    }
+}
+
+
+@media only screen and (max-width:768px) {
+    .section {
+        margin-top: 50px;
+        padding: 10px 0px;
+        margin-bottom: 300px;
+        width: fit-content;
+        gap: 10px;
+    }
+
+    .heading {
+        font-size: 45px;
+        margin-top: 50px;
+        padding-bottom: 20px;
+    }
+
+    .leftsec {
+        text-align: center;
+    }
+
+    body {
+        overflow-x: hidden;
+
+    }
+
+    .rightsec img {
+        width: 250px;
+        height: 400px;
+    }
+
+    #dob {
+        font-size: 15px;
+        margin-bottom: 30px;
+        margin-top: 10px;
+        height: 30px;
+    }
+
+    .label {
+        font-size: 25px;
+
+    }
+
+    #age,
+    #level {
+        font-size: 25px;
+    }
+}
